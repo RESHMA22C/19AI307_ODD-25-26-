@@ -65,5 +65,5 @@ public class Factors {
 
 Thus, the program to display the factors of a given number was successfully executed.
 
-## RESULT:
+
 
