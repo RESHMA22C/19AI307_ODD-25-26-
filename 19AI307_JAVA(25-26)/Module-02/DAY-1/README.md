@@ -108,9 +108,11 @@ class prog {
 
 ## OUTPUT:
 
-![Uploading image.png…]()
+<img width="817" height="481" alt="image" src="https://github.com/user-attachments/assets/67207781-30d5-4723-b25d-e8d22377994a" />
+
 
 
 ## RESULT:
 
 The program successfully creates a City class, accepts user inputs, stores them inside a City object, and prints the city details as shown in the given example.
+
