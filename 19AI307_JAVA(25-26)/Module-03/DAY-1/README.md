@@ -77,19 +77,33 @@ To write a Java program that uses inheritance to calculate and display the final
 
 
 ## ALGORITHM :
+
 1.Start the program.
+
 2.Import the required packages: java.util.Scanner and java.text.DecimalFormat.
+
 3.Create a base class named Order with attributes: orderId, customerName, totalAmount, and deliveryCharge.
+
 4.Create a constructor in the Order class to initialize these variables.
+
 5.Create a method calculateFinalAmount() in the Order class to compute the default final amount.
+
 6.Create a display() method to print order details and the final amount.
+
 7.Create a derived class NormalUser that extends Order and overrides calculateFinalAmount() to add full delivery charge.
+
 8.Create a derived class PrimeUser that extends Order and overrides calculateFinalAmount() to add only 50% of the delivery charge.
+
 9.In the main method, use a loop to accept three user inputs.
+
 10.Read user type, order ID, customer name, total amount, and delivery charge.
+
 11.Based on the user type, create either a NormalUser or PrimeUser object.
+
 12.Call the display() method to show all order details and final payable amount.
+
 13.Repeat for three orders.
+
 14.End the program.
 
 
@@ -181,3 +195,4 @@ public class Main{
 ## RESULT:
 
 The program successfully reads three food orders, identifies the user type (Normal or Prime), calculates the final payable amount using inheritance, and displays the complete order details with accurate billing.
+
