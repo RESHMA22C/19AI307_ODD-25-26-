@@ -13,16 +13,22 @@ Data set inside private inner class: 3
 To write a Java program where a private inner class is accessed only through a public method in the outer class.
 
 ## ALGORITHM :
+
 1.	Start the program.
+
 2.	Import the necessary package 'java.util'
+
 3.	Create an outer class called Outer.
+
 4.Inside it, create a private inner class named Inner with:
        A variable to store the input value.
        A method to display the value.
+
 5.Provide a public method inside the outer class that:
        Creates an object of the private inner class.
        Passes the input value to it.
        Calls the display method.
+
 6.In the main() method:
        Read the input.
        Call the outer class method to access the private inner class.
@@ -85,3 +91,4 @@ public class Main {
 ## RESULT:
 
 Thus, the program successfully demonstrates how a private inner class can be accessed indirectly through a method in the outer class.
+
