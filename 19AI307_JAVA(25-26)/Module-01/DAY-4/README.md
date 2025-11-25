@@ -27,11 +27,17 @@ To write a Java program to find the maximum odd number in an array.
 
 ## ALGORITHM :
 1.	Start the program.
+
 2.	Import the necessary package 'java.util'
+
 3.	Read the size of the array from the user.
+
 4.	Read all the array elements one by one.
+
 5.Check each element to see if it is odd.
+
 6.Keep track of the largest odd number found.
+
 7.Display the maximum odd number, or show a message if no odd number exists.
 
 
@@ -83,3 +89,4 @@ public class max{
 
 ## RESULT:
 Thus, the Java program to find the maximum odd number in an array was successfully executed.
+
