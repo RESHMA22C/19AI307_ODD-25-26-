@@ -31,16 +31,27 @@ class BankAccount {
 To write a Java program that creates a BankAccount class with private instance variables and uses public getter and setter methods to access and modify them.
 
 ## ALGORITHM :
+
 1.Start the program.
+
 2.Import the package java.util.Scanner.
+
 3.Create a class named BankAccount.
+
 4.Declare private variables accountNumber and balance.
+
 5.Create getter and setter methods for both variables.
+
 6.In the main method, create a Scanner object to take input from the user.
+
 7.Create an object of the BankAccount class.
+
 8.Read account number and balance from the user.
+
 9.Use setter methods to store the values in the object.
+
 10.Use getter methods to retrieve and print the values.
+
 11.End the program.
 
 
@@ -96,3 +107,4 @@ public class Main{
 ## RESULT:
 
 The program successfully creates a BankAccount class with private variables and accesses them using public getter and setter methods. It takes account number and balance as input and displays them as output.
+
