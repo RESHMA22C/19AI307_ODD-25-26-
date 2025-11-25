@@ -31,22 +31,30 @@ Input	Result
 To create an abstract class GameScore with an abstract method finalScore(), and implement two subclasses ArcadeGame and PuzzleGame that compute scores based on given rules.
 
 ## ALGORITHM :
-1.	Start the program.
+
+1.Start the program.
+
 2.	Import the necessary package 'java.util'
+
 3.	Create an abstract class GameScore with an abstract method finalScore() returning an integer.
+
 4.Create subclass ArcadeGame with:
           Inputs: baseScore, level
           Formula:
           score = baseScore + (level × 100)
+
 5.Create subclass PuzzleGame with:
           Input: attempts
   	       Rule:
              If attempts ≤ 3 → score = 1000 - (attempts × 100)
              Else → score = 500
+
 6.Read user input:
        1 → ArcadeGame
        2 → PuzzleGame
+
 7.Based on the choice, create the appropriate object.
+
 8.Call finalScore() and print the result.
 
 
@@ -129,3 +137,4 @@ public class Main {
 ## RESULT:
 
 Thus, the program correctly computes the final score based on the game type and user inputs.
+
