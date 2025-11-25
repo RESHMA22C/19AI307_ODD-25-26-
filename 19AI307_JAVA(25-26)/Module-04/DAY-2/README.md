@@ -51,15 +51,19 @@ To simulate an airport radar communication system where only a single Radar Cont
        Checks if the instance is null.
        If null → create the object.
        Return the same object every time.
+
 7.Add a flight counter variable inside the class.
+
 8.Create a method registerFlight(String flightName) that:
        Increases the counter.
        Prints the message with flight name and total flights.
+
 9.In the main() method:
        Read the number of flights.
        For each flight:
             Call RadarControlTower.getInstance() to get the ONE tower object.
             Call the registerFlight() method with the flight name.
+
 
 10.Display the output for each flight in the required format.
 
@@ -126,3 +130,4 @@ public class prog {
 ## RESULT:
 
 The program successfully ensures that all flights register with the same Radar Control Tower instance, updates the flight count for each registration, and prints the message showing the flight name and the total number of flights registered.
+
