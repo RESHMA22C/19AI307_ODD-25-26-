@@ -17,15 +17,25 @@ To write a Java program using a class and a parameterized constructor to perform
 ## ALGORITHM :
 
 1.Start the program.
+
 2.Import the package java.util.Scanner.
+
 3.Create a class named Addition.
+
 4.Declare two integer variables.
+
 5.Create a parameterized constructor that accepts two numbers and assigns them to the variables.
+
 6.Create a method to calculate and print the sum of the two numbers.
+
 7.In the main method, create a Scanner object to read input from the user.
+
 8.Read two numbers from the user.
+
 9.Create an object of the Addition class by passing the two numbers to the constructor.
+
 10.Call the method to display the sum.
+
 11.End the program.
 
 
@@ -74,3 +84,4 @@ public class Main{
 ## RESULT:
 
 The program successfully reads two numbers, passes them to a parameterized constructor, and prints their sum.
+
