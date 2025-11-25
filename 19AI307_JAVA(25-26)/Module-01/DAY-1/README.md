@@ -43,6 +43,7 @@ Second Key >> 1: 1
 To write a program that takes two integers as input and performs various bitwise operations—AND, OR, XOR, left shift, and right shift—to produce the corresponding results.
 
 ## ALGORITHM :
+
 1.	Start the program.
    
 2.Read the first integer and the second integer from the user.
@@ -109,4 +110,5 @@ public class java{
 ## RESULT:
 
 Thus, the Java program demonstrating bitwise operators and shift operations was successfully executed.
+
 
