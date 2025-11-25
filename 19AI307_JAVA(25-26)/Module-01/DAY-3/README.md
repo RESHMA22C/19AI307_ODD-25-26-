@@ -16,11 +16,17 @@ Factors: 1 3 5 15
 To write a program to display all the factors of a given number.
 
 ## ALGORITHM :
+
 1.	Start the program.
+
 2.	Import the necessary package 'java.util'
+
 3.	Read a number from the user.
+
 4.Use a loop from 1 to the given number.
+
 5.Check if the current value divides the number evenly (num % i == 0).
+
 6.If true, display it as a factor.
 
 
@@ -64,6 +70,7 @@ public class Factors {
 ## RESULT:
 
 Thus, the program to display the factors of a given number was successfully executed.
+
 
 
 
