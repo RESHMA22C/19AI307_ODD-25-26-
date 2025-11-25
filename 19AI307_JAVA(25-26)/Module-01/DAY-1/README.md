@@ -44,13 +44,21 @@ To write a program that takes two integers as input and performs various bitwise
 
 ## ALGORITHM :
 1.	Start the program.
+   
 2.Read the first integer and the second integer from the user.
+
 3.Perform bitwise AND using a & b.
+
 4.Perform bitwise OR using a | b.
+
 5.Perform bitwise XOR using a ^ b.
+
 6.Left shift the first number by 1 using a << 1.
+
 7.Right shift the second number by 1 using b >> 1.
+
 8.Display all the results in the given format.
+
 9.End the program.
 
 
@@ -101,3 +109,4 @@ public class java{
 ## RESULT:
 
 Thus, the Java program demonstrating bitwise operators and shift operations was successfully executed.
+
