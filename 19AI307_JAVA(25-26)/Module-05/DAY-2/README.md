@@ -2,24 +2,23 @@
 
 ## QUESTION:
 
+Write a Java program to serialize a collection of objects (like ArrayList) into a file.
 
-<img width="620" height="190" alt="image" src="https://github.com/user-attachments/assets/5326fc28-c50d-44f9-9b95-42f9f70a0331" />
+<img width="475" height="337" alt="image" src="https://github.com/user-attachments/assets/71e778bc-fa42-4222-9df3-1db1d768ca1a" />
 
 
 ## AIM:
 
-To write characters to a file in Java using the FileWriter class.
+To demonstrate serialization and deserialization of Student objects in Java, storing and retrieving them from a file.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Read the file name and content from the user.
-4.	Create a FileWriter object with the given file name.
-5.	Write the content to the file using write().
-6.	Close the FileWriter.
-7.	Print success message if no exception occurs; otherwise, print an error message.
-8.	AIMM End the program.
 
+1.Read the number of students.
+2.For each student, read id, name, and marks, and add to ArrayList.
+3.Serialize the ArrayList to "students.dat" using ObjectOutputStream.
+4.Deserialize the ArrayList from "students.dat" using ObjectInputStream.
+5.Display all deserialized student details.
+6.End the program.
 
 
 
@@ -35,28 +34,64 @@ RegisterNumber:  212223040168
 
 ## SOURCE CODE:
 ```
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
-public class WriteCharactersToFile {
+class Student implements Serializable {
+    private int id;
+    private String name;
+    private double marks;
+
+    public Student(int id, String name, double marks) {
+        this.id = id;
+        this.name = name;
+        this.marks = marks;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{id=" + id + ", name='" + name + "', marks=" + marks + "}";
+    }
+}
+
+public class SerializeStudents {
+
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
         try {
-            String filename = sc.nextLine(); 
-            String content = sc.nextLine();   
-            FileWriter writer = new FileWriter(filename);
-            writer.write(content);
-            writer.close();
+            Scanner sc = new Scanner(System.in);
+            ArrayList<Student> students = new ArrayList<>();
 
-            System.out.println("File written successfully.");
-        } 
-        catch (IOException e) {
-            System.out.println("An error occurred while writing to the file.");
+            int n = sc.nextInt(); 
+            for (int i = 0; i < n; i++) {
+                int id = sc.nextInt();
+                sc.nextLine(); 
+                String name = sc.nextLine();
+                double marks = sc.nextDouble();
+                students.add(new Student(id, name, marks));
+            }
+
+            String filename = "students.dat";
+
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename));
+            oos.writeObject(students);
+            oos.close();
+            System.out.println("Students serialized successfully into: " + filename);
+
+            ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename));
+            ArrayList<Student> deserializedStudents = (ArrayList<Student>) ois.readObject();
+            ois.close();
+
+            System.out.println("Students deserialized successfully from: " + filename);
+            System.out.println();
+            System.out.println("Deserialized Students:");
+            for (Student s : deserializedStudents) {
+                System.out.println(s);
+            }
+
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
         }
-
-        sc.close();
     }
 }
 ```
@@ -68,10 +103,14 @@ public class WriteCharactersToFile {
 
 ## OUTPUT:
 
-<img width="1016" height="424" alt="image" src="https://github.com/user-attachments/assets/fdbf3157-4ca1-4268-b4db-03784fa745a9" />
+<img width="1207" height="790" alt="image" src="https://github.com/user-attachments/assets/893ecc5b-8394-42cd-b280-f274bbfeed84" />
+
 
 
 
 ## RESULT:
 
+The program successfully writes a list of students to a file (students.dat) and reads it back, displaying the deserialized student details.ALGORITHM
+
 The program successfully writes the user-provided content to the specified file and confirms completion.
+
