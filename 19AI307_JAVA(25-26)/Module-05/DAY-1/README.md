@@ -1,7 +1,9 @@
 # Ex.No:5(A) INPUTSTREAMREADER 
 
 ## QUESTION:
+
 Write a Java program to write characters to a file using FileWriter.
+
 <img width="397" height="150" alt="image" src="https://github.com/user-attachments/assets/32ed9c55-a3fe-4647-a3b2-702206f425e5" />
 
 
@@ -81,4 +83,5 @@ public class WriteToFile {
 ## RESULT:
 
 The program successfully writes the user-provided content to the specified file and confirms completion.
+
 
