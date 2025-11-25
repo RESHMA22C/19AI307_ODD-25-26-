@@ -19,16 +19,20 @@ To write a Java program that demonstrates inheritance and method overriding by c
 1.	Start the program.
 2.	Import the necessary package 'java.util'
 3.	Create a base class Animal with a method Sound().
+
 4.Create two subclasses:
       Bird
       Cat
+
 5.In each subclass, override the Sound() method to print:
        “Bird chirps”
        “Cat meows”
+
 6.In the main() method:
       Take user input.
   	   If input is "bird" → create a Bird object.
       If input is "cat" → create a Cat object.
+
 7.Call the Sound() method to display the respective sound.
 
 
@@ -98,3 +102,4 @@ public class Main {
 
 ## RESULT:
 Thus, the program successfully demonstrates inheritance and method overriding by producing different sounds for different animals.
+
