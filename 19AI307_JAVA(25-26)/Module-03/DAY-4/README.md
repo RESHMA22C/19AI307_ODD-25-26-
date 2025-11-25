@@ -27,9 +27,13 @@ HOT
 ## AIM:
 To create a program where different weather prediction bots implement a common interface and provide temperature-based predictions.
 ## ALGORITHM :
+
 1.	Start the program.
+
 2.	Import the necessary package 'java.util'
+
 3.	Create an interface WeatherBot with a method predict(int temperature) that returns a string.
+
 4.Create two classes that implement this interface:
     SunBoT
          If temperature > 30 → return "HOT"
@@ -37,10 +41,12 @@ To create a program where different weather prediction bots implement a common i
     RainBot
          If temperature < 20 → return "COLD"
          Else → return "WARM"
+
 5.In the main() method:
          Read temperature and bot type.
          If botType = 1 → create SunBot.
          If botType = 2 → create RainBot.
+
 6.Call the predict() method and print the output.
 
 
@@ -108,3 +114,4 @@ public class Main {
 ## RESULT:
 
 Thus, the program successfully demonstrates how different bots implement a common interface to provide weather predictions.
+
