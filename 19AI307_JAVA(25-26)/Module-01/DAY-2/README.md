@@ -15,17 +15,29 @@ Otherwise, the house is dark.
 To write a Java program that uses conditional statements to determine the state of lights in a haunted house based on the hour of entry.
 
 ## ALGORITHM :
+
 1.	Start the program.
+
 2.	Import the necessary package 'java.util'
+
 3.	Create a Scanner object to read the hour input from the user.
+
 4.Read the hour as an integer.
+
 5.Check if the hour is even and between 2 and 6 (inclusive):
+
 6.Display “Lights flicker”.
+
 7.Else if the hour is odd and between 7 and 11:
+
 8.Display “Lights stay off”.
+
 9.Else if the hour is 12:
+
 10.Display “Lights turn red”.
+
 11.Display “The house is dark”.
+
 12.End the program.
 
 
@@ -72,6 +84,7 @@ public class Demo
 
 ## RESULT:
 Thus, the Java program to implement conditional statements for the haunted house lighting system was successfully executed.
+
 
 
 
