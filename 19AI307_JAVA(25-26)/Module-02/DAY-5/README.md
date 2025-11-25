@@ -18,16 +18,27 @@ Roll Number: 205
 To create a Student class with variables name and rollNumber, set their values using a method, and display the details.
 
 ## ALGORITHM :
+
 1.Start the program.
+
 2.Import the package java.util.Scanner.
+
 3.Create a class named Student.
+
 4.Declare variables name and rollNumber.
+
 5.Create a method setDetails(String name, int rollNumber) to assign values.
+
 6.Create a method display() to print the values.
+
 7.In the main method, read name and roll number from the user.
+
 8.Create an object of Student class.
+
 9.Call setDetails() to store the values.
+
 10.Call display() to print the details.
+
 11.End the program.
 
 
@@ -80,3 +91,4 @@ class prog {
 ## RESULT:
 
 The program successfully reads the student’s name and roll number, stores them using the setDetails() method, and displays the details.
+
