@@ -46,12 +46,16 @@ To create a class City with attributes cityName, population, and area, then crea
 
 ## ALGORITHM :
 1.	Start the program.
+
 2.	Import the necessary package 'java.util'
+
 3.	Create a class City with data members:
      String cityName
   	  long population
    double area
+
 4.Define a method printDetails() to display the city information.
+
 5.In the main() method:
          Create a Scanner object to accept user input.
 
@@ -61,7 +65,7 @@ To create a class City with attributes cityName, population, and area, then crea
 
          Assign these values to the object.
 
-        Call the printDetails() method to print the details.
+6.Call the printDetails() method to print the details.
 
 
 
@@ -115,4 +119,5 @@ class prog {
 ## RESULT:
 
 The program successfully creates a City class, accepts user inputs, stores them inside a City object, and prints the city details as shown in the given example.
+
 
