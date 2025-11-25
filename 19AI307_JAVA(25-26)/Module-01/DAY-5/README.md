@@ -12,9 +12,13 @@ To write a Java program to find the floor value of a number using Math.floor().
 
 ## ALGORITHM :
 1.	Start the program.
+
 2.	Import the necessary package 'java.util'
+
 3.	Read a decimal number from the user.
+
 4.Use the Math.floor() function to compute its floor value.
+
 5.Display the result to the user.
 
 
@@ -57,3 +61,4 @@ public class Maths{
 ## RESULT:
 
 Thus, the Java program to find the floor value of a number using Math.floor() was successfully executed.
+
